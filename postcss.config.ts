@@ -8,7 +8,7 @@ export default {
       appSelector: '#app',
       viewportWidth: 375,
       maxDisplayWidth: 750,
-      border: false,
+      border: true,
       rootContainingBlockSelectorList: [
         'van-tabbar',
         'van-popup',
