@@ -1,9 +1,25 @@
 <div id="top" align="center">
 
+<!-- <img src="https://cdn.jsdelivr.net/gh/easy-temps/easy-static/cover.png" alt="cover" /> -->
+
 <h1 align="center">movie-app</h1>
+
+<!-- [English](./README.md) / 简体中文 -->
 
 An mobile web apps template based on the Vue 3 ecosystem.
 一个基于 Vue 3 生态系统的移动 web 应用模板，帮助你快速完成业务开发。
+
+<!-- <p>
+<img src="https://img.shields.io/github/license/easy-temps/vue3-vant-mobile" alt="license" />
+<img src="https://img.shields.io/github/package-json/v/easy-temps/vue3-vant-mobile" alt="version" />
+<img src="https://img.shields.io/github/repo-size/easy-temps/vue3-vant-mobile" alt="repo-size" />
+<img src="https://img.shields.io/github/languages/top/easy-temps/vue3-vant-mobile" alt="languages" />
+<img src="https://img.shields.io/github/issues-closed/easy-temps/vue3-vant-mobile" alt="issues" />
+</p> -->
+
+<!-- [文档](https://easy-temps.github.io/easy-docs/vue3-vant-mobile/) / [交流](https://github.com/easy-temps/vue3-vant-mobile/issues/56) / [反馈](https://github.com/easy-temps/vue3-vant-mobile/issues) -->
+
+<!-- 🖥 <a href="https://vue3-vant-mobile.netlify.app">在线预览</a> -->
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e6828bd2-2904-4c3e-a67c-b97d32aa1275/deploy-status)](https://app.netlify.com/sites/vue3-vant-mobile/deploys)
 
