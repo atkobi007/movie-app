@@ -2,13 +2,12 @@
 export default {
   plugins: {
     'autoprefixer': {},
-
     // https://github.com/wswmsword/postcss-mobile-forever
     'postcss-mobile-forever': {
       appSelector: '#app',
       viewportWidth: 375,
       maxDisplayWidth: 750,
-      border: false,
+      border: true,
       rootContainingBlockSelectorList: [
         'van-tabbar',
         'van-popup',
