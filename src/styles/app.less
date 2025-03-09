@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+/* 隐藏 Chrome、Safari 和 Opera 的滚动条 */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0px !important;
+}
+
 html {
   background: var(--van-gray-1);
   font-size: var(--van-font-size-lg);
@@ -24,4 +30,11 @@ html.dark {
 ::-webkit-scrollbar {
   width: 0;
   background: transparent;
+}
+
+.page-wrapper-tb {
+  padding: 5px 0px 5px 0px;
+}
+.page-wrapper-lr {
+  padding: 0px 15px 0px 15px;
 }

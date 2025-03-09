@@ -36,6 +36,8 @@
   "layouts": {
     "home": "HOME",
     "profile": "PROFILE",
+    "find": "FIND",
+    "vip": "VIP",
     "hot": "HOT"
   },
   "profile": {

@@ -36,6 +36,8 @@
   "layouts": {
     "home": "首页",
     "profile": "我的",
+    "find": "发现",
+    "vip": "VIP",
     "hot": "热播"
   },
   "profile": {
