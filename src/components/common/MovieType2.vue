@@ -1,5 +1,6 @@
 <script setup>
 const props = defineProps({})
+const aaa ='test'
 </script>
 
 <template>
