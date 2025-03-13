@@ -4,8 +4,8 @@
 
 An mobile web apps template based on the Vue 3 ecosystem.
 一个基于 Vue 3 生态系统的移动 web 应用模板，帮助你快速完成业务开发。
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e6828bd2-2904-4c3e-a67c-b97d32aa1275/deploy-status)](https://app.netlify.com/sites/vue3-vant-mobile/deploys)
+<!-- 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e6828bd2-2904-4c3e-a67c-b97d32aa1275/deploy-status)](https://app.netlify.com/sites/vue3-vant-mobile/deploys) -->
 
 </div>
 

@@ -24,7 +24,6 @@ declare module 'vue' {
     Tv: typeof import('./../components/tabs/Tv.vue')['default']
     VanConfigProvider: typeof import('vant/es')['ConfigProvider']
     VanIcon: typeof import('vant/es')['Icon']
-    VanImage: typeof import('vant/es')['Image']
     VanPopover: typeof import('vant/es')['Popover']
     VanSwipe: typeof import('vant/es')['Swipe']
     VanSwipeItem: typeof import('vant/es')['SwipeItem']

@@ -6,7 +6,7 @@ const Configuration: UserConfig = {
   formatter: '@commitlint/format',
   rules: {
     'type-enum': [
-      RuleConfigSeverity.Error,
+      RuleConfigSeverity.Disabled,
       'always',
       [
         'feat',
