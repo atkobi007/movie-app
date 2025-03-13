@@ -53,19 +53,19 @@ const actions = [
 ]
 const tabsMap = {
   0: defineAsyncComponent(() => {
-    return import('@/components/tabs/home.vue')
+    return import('@/components/tabs/Recommend.vue')
   }),
   1: defineAsyncComponent(() => {
-    return import('@/components/tabs/movie.vue')
+    return import('@/components/tabs/Movies.vue')
   }),
   2: defineAsyncComponent(() => {
-    return import('@/components/tabs/tv.vue')
+    return import('@/components/tabs/Tv.vue')
   }),
   3: defineAsyncComponent(() => {
-    return import('@/components/tabs/cartoon.vue')
+    return import('@/components/tabs/Cartoon.vue')
   }),
   4: defineAsyncComponent(() => {
-    return import('@/components/tabs/variety-show.vue')
+    return import('@/components/tabs/VarietyShow.vue')
   }),
 }
 
