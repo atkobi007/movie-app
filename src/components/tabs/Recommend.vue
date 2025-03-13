@@ -1,4 +1,6 @@
 <script setup>
+import MovieType1 from '../common/MovieType1.vue'
+
 const images = ref([
   'https://fastly.jsdelivr.net/npm/@vant/assets/apple-1.jpeg',
   'https://fastly.jsdelivr.net/npm/@vant/assets/apple-2.jpeg',
@@ -21,7 +23,7 @@ function imageStyle(img) {
   <div class="root-home">
     <van-swipe :autoplay="3000" lazy-render class="swiper-container">
       <van-swipe-item v-for="image in images" :key="image">
-        <div style="height: 190px;width: 100%;" :style="imageStyle(image)">
+        <div class="swiper-container-conver" :style="imageStyle(image)">
           <div class="custom-item">
             标题
           </div>
@@ -36,7 +38,9 @@ function imageStyle(img) {
         </div>
       </template>
     </van-swipe>
-    <div>HOME</div>
+    <div>
+      <MovieType1 :list="[11, 1, 3, 4, 4]" title="今日热点" />
+    </div>
     <div>BOTTOm</div>
   </div>
 </template>
@@ -45,16 +49,21 @@ function imageStyle(img) {
 .root-home {
   width: 100%;
   height: 1000px;
-  background-color: antiquewhite;
+  background-color: yellowgreen;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .swiper-container {
   height: 190px;
   width: 100%;
   position: relative;
+}
+
+.swiper-container-conver {
+  height: 190px;
+  width: 100%;
 }
 
 .custom-item {
