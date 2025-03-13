@@ -165,7 +165,6 @@ const Component = computed(() => {
 }
 
 .tabs-right {
-  width: 22%;
   justify-content: flex-end;
   padding-right: 6px;
   gap: 10px;
