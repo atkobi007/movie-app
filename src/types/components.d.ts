@@ -5,14 +5,17 @@
 // biome-ignore lint: disable
 export {}
 
-/* prettier-ignore */
+
 declare module 'vue' {
   export interface GlobalComponents {
     Cartoon: typeof import('./../components/tabs/Cartoon.vue')['default']
     Chart: typeof import('./../components/Chart/index.vue')['default']
     GhostButton: typeof import('./../components/GhostButton.vue')['default']
-    Home: typeof import('./../components/tabs/Home.vue')['default']
+    MovieItem: typeof import('./../components/common/MovieItem.vue')['default']
     Movies: typeof import('./../components/tabs/Movies.vue')['default']
+    MovieTitle: typeof import('./../components/common/MovieTitle.vue')['default']
+    MovieType1: typeof import('./../components/common/MovieType1.vue')['default']
+    MovieType2: typeof import('./../components/common/MovieType2.vue')['default']
     NavBar: typeof import('./../components/NavBar.vue')['default']
     Recommend: typeof import('./../components/tabs/Recommend.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
@@ -20,6 +23,8 @@ declare module 'vue' {
     TabBar: typeof import('./../components/TabBar.vue')['default']
     Tv: typeof import('./../components/tabs/Tv.vue')['default']
     VanConfigProvider: typeof import('vant/es')['ConfigProvider']
+    VanIcon: typeof import('vant/es')['Icon']
+    VanImage: typeof import('vant/es')['Image']
     VanPopover: typeof import('vant/es')['Popover']
     VanSwipe: typeof import('vant/es')['Swipe']
     VanSwipeItem: typeof import('vant/es')['SwipeItem']
