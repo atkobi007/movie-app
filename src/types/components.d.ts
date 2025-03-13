@@ -5,7 +5,7 @@
 // biome-ignore lint: disable
 export {}
 
-
+/* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
     Cartoon: typeof import('./../components/tabs/Cartoon.vue')['default']
