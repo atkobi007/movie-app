@@ -76,13 +76,11 @@ const Component = computed(() => {
 
 <template>
   <div class="root-main">
-    <div
-      style="position:fixed;top:0px; display: flex;flex-direction: row;justify-content: space-between;width: 100%;background:white;"
-    >
+    <div class="main-top">
       <div class="tabs-nav tabs-left">
         <div i-carbon:worship />
       </div>
-      <van-tabs v-model:active="tabActive" style="width: 68%;" background="white">
+      <van-tabs v-model:active="tabActive" class="tabs-nav-container">
         <van-tab v-for="index in 8" :key="index" :title="`标签 ${index}`">
           <!-- 内容 {{ index }} -->
         </van-tab>
@@ -132,6 +130,21 @@ const Component = computed(() => {
   width: 100%;
   height: 100%;
   padding-top: 45px;
+}
+
+.main-top {
+  position: fixed;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-between;
+  width: 100%;
+  background: white;
+  z-index: 999;
+}
+
+.tabs-nav-container {
+  width: 265px;
 }
 
 .tabs-nav {
