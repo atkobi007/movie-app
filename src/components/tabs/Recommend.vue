@@ -1,5 +1,6 @@
 <script setup>
 import MovieType1 from '../common/MovieType1.vue'
+import MovieType2 from '../common/MovieType2.vue'
 
 const images = ref([
   'https://fastly.jsdelivr.net/npm/@vant/assets/apple-1.jpeg',
@@ -17,6 +18,22 @@ function imageStyle(img) {
     'background-size': '100% 100%',
   }
 }
+
+const data = [
+  { title: "今日热门", list: [1, 2, 3, 4], type: 1 },
+  { title: "电影", list: [1, 2, 3, 4], type: 2 },
+  { title: "电视剧", list: [1, 2, 3, 4], type: 3 },
+  { title: "综艺", list: [1, 2, 3, 4], type: 4 },
+  { title: "动漫", list: [1, 2, 3, 4], type: 5 }
+]
+
+const getItemComponent = (type) => {
+  if (type === 1) {
+    return MovieType1;
+  }
+  return MovieType2;
+}
+
 </script>
 
 <template>
@@ -31,15 +48,16 @@ function imageStyle(img) {
       </van-swipe-item>
       <template #indicator="{ active, total }">
         <div class="custom-indicator">
-          <div
-            v-for="(item, ix) in total" :key="item" class="custom-indicator-item"
-            :class="{ 'custom-indicator-item-active': active === ix }"
-          />
+          <div v-for="(item, ix) in total" :key="item" class="custom-indicator-item"
+            :class="{ 'custom-indicator-item-active': active === ix }" />
         </div>
       </template>
     </van-swipe>
     <div>
-      <MovieType1 :list="[11, 1, 3, 4, 4]" title="今日热点" />
+      <template v-for="item in data" :key="item.type">
+        <MovieType1 v-if="item.type === 1" :list="item.list" :title="item.title" />
+        <MovieType2 v-else :list="item.list" :title="item.title" />
+      </template>
     </div>
     <div>BOTTOm</div>
   </div>
@@ -48,8 +66,8 @@ function imageStyle(img) {
 <style scoped>
 .root-home {
   width: 100%;
-  height: 1000px;
-  background-color: yellowgreen;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */

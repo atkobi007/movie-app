@@ -8,21 +8,18 @@ const props = defineProps({
 })
 
 const getData = computed(() => {
-  return [{ title: "111", id: '0x99938', type: "真人秀" },
-  { title: "111", id: '0x99939', type: "真人秀" },
-  { title: "111", id: '0x99940', type: "真人秀" },
-  { title: "111", id: '0x99941', type: "真人秀" },
-  { title: "111", id: '0x99942', type: "真人秀" },
-  { title: "111", id: '0x99943', type: "真人秀" },
-  { title: "111", id: '0x99944', type: "真人秀" }];//props.list ?? []
+  return [{ title: "111", id: '0x99938', type: "" },
+  { title: "111", id: '0x99939', type: "" },
+  { title: "111", id: '0x99940', type: "" },
+  { title: "111", id: '0x99941', type: "" }];//props.list ?? []
 })
 </script>
 
 <template>
   <div class="item-root">
-    <MovieTitle title="HOT" title-color="white" />
-    <MovieItem v-for="info in [0]" :key="info" :fitHeight="true" :fitWidth="true" score="9.0" hot="654,895"
-      typeText="真人" />
+    <MovieTitle :title="props.title" title-color="white" :isArrow="false"/>
+    <!-- <MovieItem v-for="info in [0]" :key="info" :fitHeight="true" :fitWidth="true" score="9.0" hot="654,895"
+      typeText="真人" /> -->
     <MovieItem v-for="info in getData" :key="info.id" :fitHeight="false" :fitWidth="false" score="9.0" hot="654,895"
       :typeText="info.type" />
   </div>

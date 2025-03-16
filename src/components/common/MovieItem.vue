@@ -47,7 +47,8 @@ const setItemType = computed(() => {
 <template>
   <div class="item" :class="setItemCls">
     <div class="item-cover border-radius-top" :class="setItemCoverCls">
-      <img class="border-radius-top" src="https://fastly.jsdelivr.net/npm/@vant/assets/apple-1.jpeg" width="100%" height="100%">
+      <img class="border-radius-top" src="https://fastly.jsdelivr.net/npm/@vant/assets/apple-1.jpeg" width="100%"
+        height="100%">
       <div class="item-container border-radius-bottom">
         <div class="content-height">
           <div class="content-hot">{{ score }}</div>
@@ -59,7 +60,7 @@ const setItemType = computed(() => {
     </div>
     <div :class="setItemTitleType">
       <span class="item-title van-ellipsis">标题信息标题信息标题信息标题信息标题信息</span>
-      <span :class="setItemType">{{ typeText }}</span>
+      <span v-if="!!typeText" :class="setItemType">{{ typeText }}</span>
     </div>
   </div>
 </template>
@@ -81,14 +82,15 @@ const setItemType = computed(() => {
   width: 174px;
   height: 100px;
   position: relative;
-  background-color: yellow;  
+  background-color: yellow;
 }
 
-.border-radius-top{
+.border-radius-top {
   border-radius: 4px 4px 0px 0px;
 }
-.border-radius-bottom{
-  border-radius: 0px 0px 4px 4px;
+
+.border-radius-bottom {
+  /* border-radius: 0px 0px 4px 4px; */
 }
 
 .item-cover-width-fill {
@@ -109,7 +111,7 @@ const setItemType = computed(() => {
   width: 100%;
   height: 20px;
   position: relative;
-  bottom: 20px;
+  bottom: 24px;
   font-size: 10px;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.01));
   padding-left: 6px;
@@ -142,13 +144,13 @@ const setItemType = computed(() => {
 .item-title {
   height: 30px;
   line-height: 40px;
-  font-size: 14px;
-  color: white;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .item-type {
-  font-size: 12px;
-  color: gray;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .item-title-type {

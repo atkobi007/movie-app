@@ -7,6 +7,10 @@ const props = defineProps({
     default: '',
   },
   subTitleColor: String,
+  isArrow: {
+    type: Boolean,
+    default: true
+  },
   arrowColor: {
     type: String,
     default: 'gray',
@@ -60,7 +64,7 @@ const setArrowColor = computed(() => {
     <span class="title-root-0" :style="setTitleColor">{{ title }}</span>
     <div class="sub-title-root">
       <span v-if="!!props.subTitle" :style="setSubTitleColor">{{ subTitle }}</span>
-      <span :style="setArrowColor" i-carbon:chevron-right />
+      <span v-if="props.isArrow" :style="setArrowColor" i-carbon:chevron-right />
     </div>
   </div>
 </template>
@@ -73,9 +77,10 @@ const setArrowColor = computed(() => {
   flex-direction: row;
   align-items: center;
 }
+
 .title-root-0 {
-  font-weight: bold;
-  font-size: 22px;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .sub-title-root {
